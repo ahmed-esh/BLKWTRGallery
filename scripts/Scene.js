@@ -1,12 +1,12 @@
-import { PerspectiveCamera, Scene, Vector3, WebGLRenderer, AmbientLight, DirectionalLight, TextureLoader } from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+import { PerspectiveCamera, Scene, Vector3, WebGLRenderer, AmbientLight, DirectionalLight } from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import * as Skybox from "../scene/Skybox.js";
 import * as Ocean from "../scene/Ocean.js";
 import * as SeaFloor from "../scene/SeaFloor.js";
 import * as Blocks from "../scene/Blocks.js";
 import { axes } from "./Debug.js";
-
+import { TextureLoader } from "three";
 export const body = document.createElement("div");
 
 export const renderer = new WebGLRenderer();

@@ -1,3 +1,26 @@
+# Dependencies
 node_modules/
+.DS_Store
+
+# Build output
 dist/
-.DS_Store 
+dist-ssr/
+
+# Local env files
+*.local
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw? 

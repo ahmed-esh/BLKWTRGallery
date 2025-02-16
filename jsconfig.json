@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "three": ["node_modules/three/build/three.module.js"],
+      "three/*": ["node_modules/three/*"]
+    }
+  }
+} 

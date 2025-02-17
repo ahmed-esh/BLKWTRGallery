@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+!libs/
 .DS_Store
 
 # Build output

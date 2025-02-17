@@ -1,11 +1,11 @@
 import { PerspectiveCamera, Scene, Vector3, WebGLRenderer, AmbientLight, DirectionalLight } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
-import * as Skybox from "../scene/Skybox.js";
-import * as Ocean from "../scene/Ocean.js";
-import * as SeaFloor from "../scene/SeaFloor.js";
-import * as Blocks from "../scene/Blocks.js";
-import { axes } from "./Debug.js";
+import * as Skybox from "/BLKWTRGallery/scene/Skybox.js";
+import * as Ocean from "/BLKWTRGallery/scene/Ocean.js";
+import * as SeaFloor from "/BLKWTRGallery/scene/SeaFloor.js";
+import * as Blocks from "/BLKWTRGallery/scene/Blocks.js";
+import { axes } from "/BLKWTRGallery/scripts/Debug.js";
 import { TextureLoader } from "three";
 export const body = document.createElement("div");
 
@@ -132,7 +132,7 @@ export function Start()
 
     // Load the GLB model
     loader.load(
-        './assets/3D/Girl/Fish1.glb',
+        '/BLKWTRGallery/assets/3D/Girl/Fish1.glb',
         function (gltf) {
             girlModel = gltf.scene;
             girlModel.traverse((node) => {
@@ -141,9 +141,9 @@ export function Start()
                     node.receiveShadow = true;
                     /* if (node.material) {
                         // Load textures based on GLTF file definitions
-                        const baseColorTexture = textureLoader.load('./assets/3D/Girl/textures/initialShadingGroup_baseColor.jpg');
-                        const normalTexture = textureLoader.load('./assets/3D/Girl/textures/initialShadingGroup_normal.png');
-                        const metallicRoughnessTexture = textureLoader.load('./assets/3D/Girl/textures/initialShadingGroup_metallicRoughness.png');
+                        const baseColorTexture = textureLoader.load('/BLKWTRGallery/assets/3D/Girl/textures/initialShadingGroup_baseColor.jpg');
+                        const normalTexture = textureLoader.load('/BLKWTRGallery/assets/3D/Girl/textures/initialShadingGroup_normal.png');
+                        const metallicRoughnessTexture = textureLoader.load('/BLKWTRGallery/assets/3D/Girl/textures/initialShadingGroup_metallicRoughness.png');
 
                         // Apply textures and material properties
                         node.material.map = baseColorTexture;
@@ -182,7 +182,7 @@ export function Start()
 
     // Load the crab model
     loader.load(
-        './assets/new assests/crab.glb',
+        '/BLKWTRGallery/assets/new assests/crab.glb',
         function (gltf) {
             crabModel = gltf.scene;
             crabModel.traverse((node) => {
@@ -207,7 +207,7 @@ export function Start()
 
     // Load the hands model
     loader.load(
-        './assets/new assests/new_fish.glb',
+        '/BLKWTRGallery/assets/new assests/new_fish.glb',
         function (gltf) {
             handsModel = gltf.scene;
             handsModel.traverse((node) => {
@@ -232,7 +232,7 @@ export function Start()
 
     // Load the oldman model
     loader.load(
-        './assets/new assests/oldman.glb',
+        '/BLKWTRGallery/assets/new assests/oldman.glb',
         function (gltf) {
             oldmanModel = gltf.scene;
             oldmanModel.traverse((node) => {
